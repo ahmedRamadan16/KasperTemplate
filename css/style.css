@@ -601,7 +601,7 @@ header .bullets li.active{
 .testimonials .row{
     
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));  
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));  
     grid-gap: 50px; 
     
 }
@@ -723,6 +723,10 @@ header .bullets li.active{
 }
 
 @media (max-width:767px){
+    .testimonials .row{
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));  
+
+    }
     .testimonials .row .col p{
         text-align: left;
     }
