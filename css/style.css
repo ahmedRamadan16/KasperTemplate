@@ -244,6 +244,9 @@ header .bullets li.active{
 }
 @media (max-width:767px)
 {
+    .services .row{
+        grid-template-columns: 1fr;
+    }
     .services .service-col .serv{
         flex-direction: column;
         align-items: center;
