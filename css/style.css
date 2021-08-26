@@ -242,7 +242,7 @@ header .bullets li.active{
     line-height: 1.7;
     color: #acabab;
 }
-@media (max-width:767px)
+@media (max-width:991px)
 {
     .services .row{
         grid-template-columns: 1fr;
@@ -263,7 +263,8 @@ header .bullets li.active{
     }
     .services .service-col .serv .serv-intro p{
         font-size: 14px;
-         width: 50%;
+         width: 100%;
+         max-width: 100%;
          margin: auto;
     }
 }
@@ -336,7 +337,7 @@ header .bullets li.active{
 }
 
 
-@media (max-width:767px)
+@media (max-width:991px)
 {
     .design .mobile-design{
         display: none;
@@ -600,7 +601,7 @@ header .bullets li.active{
 .testimonials .row{
     
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));  
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));  
     grid-gap: 50px; 
     
 }
@@ -627,6 +628,7 @@ header .bullets li.active{
 }
 .testimonials .row .col .testimonials-content .content .image img{
     border-radius: 50%;
+    width: 100px;
     max-width: 100%;
 }
 
@@ -721,10 +723,12 @@ header .bullets li.active{
 }
 
 @media (max-width:767px){
+    .testimonials .row .col p{
+        text-align: left;
+    }
     .testimonials .row .col .testimonials-content .content{
         flex-direction: column;
     }
-    .testimonials .row .col .testimonials-content .content .intro p,
     .testimonials .row .col .testimonials-content .content .intro span
     {
         text-align: center ;
